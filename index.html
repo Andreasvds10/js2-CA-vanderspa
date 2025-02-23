@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrindSpace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <script type="module" src="/js/auth.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="menu-container">
+        <button class="icon-btn" id="menuIcon">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <ul class="dropdown" id="menuDropdown" style="display: none;">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/html/about.html">About</li>
+          <li><a href="/html/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="icon-btn-container" id="headerIcons"></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Welcome Section -->
+    <section class="section welcome">
+      <h1>Welcome to GrindSpace</h1>
+      <p>Collaborate to innovate. Elevate your ideas and bring your vision to life.</p>
+      <a href="/html/login.html" class="btn">Log In</a>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+      <h2>How It Works</h2>
+      <div class="steps-container">
+        <div class="step">
+          <span class="material-symbols-outlined">login</span>
+          <h3>Sign Up</h3>
+          <p>Create a free account to join our community of innovators.</p>
+        </div>
+        <div class="step">
+          <span class="material-symbols-outlined">post_add</span>
+          <h3>Post Your Idea</h3>
+          <p>Share your ideas with detailed descriptions and receive valuable feedback.</p>
+        </div>
+        <div class="step">
+          <span class="material-symbols-outlined">groups</span>
+          <h3>Engage</h3>
+          <p>Collaborate, discuss, and refine your concepts with other users.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features">
+      <h2>Why GrindSpace?</h2>
+      <ul>
+        <li><strong>Share Your Ideas:</strong> Post your entrepreneurial ideas and get constructive feedback from a supportive community.</li>
+        <li><strong>Collaborate with Others:</strong> Connect with like-minded innovators to take your concepts to the next level.</li>
+        <li><strong>Track Your Progress:</strong> Stay organized and motivated as you turn your ideas into reality.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Call-to-Action Section -->
+  <section class="cta-section">
+    <h2>Ready to Join GrindSpace?</h2>
+    <p>Log in or create an account to start collaborating and sharing your ideas today.</p>
+    <div class="cta-buttons">
+      <a href="/html/createAccount.html" class="btn alt-btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GrindSpace. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="/js/auth.js"></script>
+  <script src="/js/menu.js"></script>
+  <script src="/js/search.js"></script>
+</body>
+</html>

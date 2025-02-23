@@ -1,0 +1,112 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111;
+    color: #ddd;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #222, #2a2a2a);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-container h1 {
+    color: #00d1ff;
+}
+
+.contact-info {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.contact-info span {
+    color: #00d1ff;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: #ddd;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #00d1ff;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #00d1ff;
+    color: #111;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00b8e5;
+    transform: scale(1.05);
+}
+
+/* Team Section */
+.team-container {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.team-container h2 {
+    color: #00d1ff;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.team-member small {
+    color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+    }
+}

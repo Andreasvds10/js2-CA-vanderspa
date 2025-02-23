@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post | SocialApp</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/post.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">SocialApp</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/html/index.html">Home</a></li>
+        <li><a href="/html/about.html">About/a></li>
+        <li><a href="/html/contact.html">Contact</a></li>
+        <li>
+          <form id="searchForm" class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for users..." />
+            <button type="submit">Search</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="post" class="section">
+      <h2>Post Title</h2>
+      <p>Posted by: <strong>Username</strong></p>
+      <img src="https://via.placeholder.com/500" alt="Post Image">
+      <p id="postContent">This is the content of the post...</p>
+    </section>
+  </main>
+  <script src="post.js"></script>
+</body>
+</html>

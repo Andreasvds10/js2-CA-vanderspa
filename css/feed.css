@@ -1,0 +1,217 @@
+/* ✅ General Section Styling */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #00d1ff;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #00d1ff;
+  margin: 20px 0;
+}
+
+/* ✅ Filter Section Styling */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(135deg, #1b1b1b, #222);
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.filter-section label {
+  font-size: 14px;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.filter-section input,
+.filter-section select,
+.filter-section button {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #2a2a2a;
+  color: #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.filter-section input:focus,
+.filter-section select:focus {
+  outline: none;
+  border-color: #00d1ff;
+}
+
+.filter-section button {
+  background-color: #00d1ff;
+  color: #111;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filter-section button:hover {
+  background-color: #00b8e5;
+  transform: scale(1.05);
+}
+
+.filter-section button:active {
+  transform: scale(0.98);
+}
+
+/* ✅ Post Grid Layout */
+#postsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ✅ Post Card Styling */
+.post-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the buttons are at the bottom */
+  background: linear-gradient(135deg, #222 0%, #2a2a2a 100%);
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 450px; /* ✅ Ensures all cards are the same height */
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.post-card h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #00d1ff;
+  margin-bottom: 10px;
+}
+
+.post-card p {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.post-card small {
+  display: block;
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ✅ Post Image Styling */
+.post-media img {
+  width: 100%;
+  height: 200px; /* ✅ Ensures all images have the same height */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ✅ Button Container to Align Buttons */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+/* ✅ Button Styling */
+.post-actions a, .post-actions button {
+  flex: 1;
+  text-align: center;
+  padding: 10px 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.view-btn, .edit-btn {
+  background-color: #0099ff; /* Matches your header color */
+  color: white;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.view-btn:hover, .edit-btn:hover {
+  background-color: #007acc;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+  .filter-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filter-section input,
+  .filter-section select,
+  .filter-section button {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  #postsContainer {
+    padding: 0 10px;
+  }
+
+  .section h1 {
+    font-size: 36px;
+  }
+
+  .post-card {
+    min-height: 420px;
+  }
+
+  .post-card img {
+    max-height: 150px;
+  }
+}

@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #111;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Fix Profile Banner */
+.profile-banner {
+  width: 100%;
+  max-height: 200px;  /* Prevents it from taking too much space */
+  object-fit: cover;  /* Ensures the image fills the area properly */
+  display: block;
+  border-bottom: 2px solid #222; /* Adds a subtle separation */
+}
+
+/* Fix Profile Avatar */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 140px;  /* Adjust to overlap banner */
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid #111; /* Adds a border for visibility */
+}
+
+/* Username and Stats */
+h2 {
+  font-size: 36px;
+  color: #00d1ff;
+  margin-top: 80px; /* Pushes text down after avatar */
+  margin-bottom: 10px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #00d1ff;
+}
+
+.stat-box p {
+  font-size: 14px;
+  color: #bbb;
+  margin: 5px 0 0;
+}
+
+/* Bio Section */
+.bio-section {
+  margin-top: 30px;
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 600px;
+}
+
+.bio-section p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Textarea for Editing Bio */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #333;
+  color: #ddd;
+  border: none;
+  font-family: 'Inter', sans-serif;
+}
+
+textarea:focus {
+  outline: 2px solid #00d1ff;
+}
+
+/* Bio Edit Buttons */
+.edit-bio-btn, #save-bio-btn {
+  padding: 10px 20px;
+  background-color: #00d1ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit-bio-btn:hover, #save-bio-btn:hover {
+  background-color: #00b8e5;
+}
+
+#bio-input, #save-bio-btn {
+  margin-top: 10px;
+  display: none;
+}
+
+#bio {
+  font-size: 16px;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+/* Follow Button */
+.follow-btn {
+  padding: 10px 20px;
+  background-color: #00d1ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.follow-btn:hover {
+  background-color: #00b8e5;
+}
+
+.follow-btn.active {
+  background-color: #ff4747; /* Changes to red when following */
+}
+
+
+/* Fix Post Section */
+#posts-section {
+  margin-top: 40px;
+  width: 80%;
+  max-width: 600px;
+}
+
+#postsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.post-card {
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.post-media img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Button Container */
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* General Button Styling */
+.post-actions button {
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* View Button - Matches Edit Button */
+.view-btn {
+  background-color: #00aaff; /* Same as Edit button */
+}
+
+.view-btn:hover {
+  background-color: #0088cc;
+  transform: translateY(-2px);
+}
+
+/* Edit Button - Your Header Blue */
+.edit-btn {
+  background-color: #00aaff;
+}
+
+.edit-btn:hover {
+  background-color: #0088cc;
+  transform: translateY(-2px);
+}
+
+/* Delete Button - Red but Refined */
+.delete-btn {
+  background-color: #ff4444;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+  transform: translateY(-2px);
+}
+

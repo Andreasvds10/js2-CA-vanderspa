@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | GrindSpace</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="icon-container">
+                <div class="menu-container">
+                    <button class="icon-btn" id="menuIcon">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                    <ul class="dropdown" id="menuDropdown" style="display: none;">
+                        <li><a href="/html/about.html">About</a></li>
+                        <li><a href="/html/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <button class="icon-btn" id="searchIcon">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+            <div class="icon-btn-container">
+                <a href="/html/feed.html" class="icon-btn">
+                    <span class="material-symbols-outlined">feed</span>
+                    <p>Feed</p>
+                </a>
+                <a href="/html/createPost.html" class="icon-btn">
+                    <span class="material-symbols-outlined">add_circle</span>
+                    <p>Create</p>
+                </a>
+                <a href="/html/profile.html" class="icon-btn">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <p>Profile</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <h1>Contact Us</h1>
+            <p>Have questions? Want to collaborate? Reach out to us!</p>
+
+            <div class="contact-info">
+                <p><span class="material-symbols-outlined">email</span> support@grindspace.com</p>
+                <p><span class="material-symbols-outlined">phone</span> +1 (555) 123-4567</p>
+                <p><span class="material-symbols-outlined">location_on</span> San Francisco, CA</p>
+            </div>
+
+            <form id="contactForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+
+        <section class="team-container">
+            <h2>Meet the Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <p>William Torsvik</p>
+                    <small>Founder & CEO</small>
+                </div>
+                <div class="team-member">
+                    <p>Andreas van der Spa</p>
+                    <small>DADDY</small>
+                </div>
+                <div class="team-member">
+                    <p>Aleksander van der spa</p>
+                    <small>Lead Developer</small>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/menu.js"></script>
+    <script src="/js/contact.js"></script>
+    <script src="/js/search.js"></script>
+</body>
+</html>

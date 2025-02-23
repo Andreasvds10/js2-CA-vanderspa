@@ -1,0 +1,249 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #111; /* Clean dark background */
+  color: #ddd; /* Light gray text */
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #121212; /* Slightly darker for contrast */
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: #00d1ff;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  color: #009bcc;
+}
+
+.menu-container .dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #222;
+  border-radius: 8px;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu-container .dropdown li {
+  padding: 10px 20px;
+}
+
+.menu-container .dropdown li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.menu-container .dropdown li:hover {
+  background: #333;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #121212;
+}
+
+.welcome h1 {
+  font-size: 42px;
+  color: #00d1ff;
+  margin-bottom: 15px;
+}
+
+.welcome p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.welcome .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #00d1ff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.welcome .btn:hover {
+  background-color: #009bcc;
+  transform: scale(1.05);
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 28px;
+  color: #00d1ff;
+  margin-bottom: 30px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.step .material-symbols-outlined {
+  font-size: 36px;
+  color: #00d1ff;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 20px;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 16px;
+  color: #aaa;
+}
+
+/* Features Section */
+.features {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 28px;
+  color: #00d1ff;
+  margin-bottom: 30px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.features li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #ccc;
+  text-align: left;
+  padding-left: 30px;
+  position: relative;
+}
+
+.features li::before {
+  content: '\2022';
+  color: #00d1ff;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  margin: 30px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cta-section h2 {
+  font-size: 28px;
+  color: #00d1ff;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.cta-section .cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cta-section .btn {
+  background-color: #00d1ff;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-section .btn:hover {
+  background-color: #009bcc;
+  transform: scale(1.05);
+}
+
+.cta-section .alt-btn {
+  background-color: #333; /* Alternate button style */
+  border: 1px solid #00d1ff;
+  color: #00d1ff;
+}
+
+.cta-section .alt-btn:hover {
+  background-color: #444;
+  border-color: #009bcc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #121212;
+  color: #888;
+  font-size: 14px;
+}

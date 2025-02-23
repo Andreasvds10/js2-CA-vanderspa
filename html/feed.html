@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed | GrindSpace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/feed.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="icon-container">
+        <div class="menu-container">
+          <button class="icon-btn" id="menuIcon">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+          <ul class="dropdown" id="menuDropdown" style="display: none;">
+            <li><a href="/html/about.html">About</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <button class="icon-btn" id="searchIcon">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <form class="search-bar" id="searchBar" style="display: none;">
+          <input type="text" placeholder="Search for users..." />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="icon-btn-container">
+        <a href="/html/feed.html" class="icon-btn">
+          <span class="material-symbols-outlined">feed</span>
+          <p>Feed</p>
+        </a>
+        <a href="/html/createPost.html" class="icon-btn">
+          <span class="material-symbols-outlined">add_circle</span>
+          <p>Create</p>
+        </a>
+        <a href="/html/profile.html" class="icon-btn">
+          <span class="material-symbols-outlined">account_circle</span>
+          <p>Profile</p>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="feed" class="section">
+      <h1>GrindSpace</h1>
+      <p>Collaborate to innovate. Elevate your ideas,</p>
+      <p>Refine your concepts, and bring visions to life.</p>
+      <h2>Your Feed</h2>
+
+      <form id="filter-form" class="filter-section">
+        <label for="authorFilter">Filter by author:</label>
+        <select id="authorFilter">
+          <option value="">All authors</option>
+        </select>
+
+        <label for="titleFilter">Filter by title:</label>
+        <input type="text" id="titleFilter" placeholder="Enter title keyword...">
+        
+        <button type="submit" class="btn">Apply Filters</button>
+      </form>
+
+      <div id="postsContainer"></div>
+    </section>
+  </main>
+
+  <script type="module" src="/js/feed.js"></script>
+  <script type="module" src="/js/search.js"></script>
+  <script src="/js/menu.js"></script>
+</body>
+</html>

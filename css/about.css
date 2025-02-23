@@ -1,0 +1,87 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #111;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00d1ff;
+  text-decoration: none;
+}
+
+.intro-section, .story-section, .how-it-works-section, .why-join-section, .mission-section, .cta-section {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #00d1ff;
+}
+
+.intro-section p, .story-section p, .how-it-works-section p, .mission-section p, .cta-section p {
+  font-size: 18px;
+  color: #ddd;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.step-card {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.step-card span {
+  font-size: 36px;
+  color: #00d1ff;
+  margin-bottom: 10px;
+}
+
+.why-join-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-join-section li {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.cta-section .btn {
+  padding: 12px 30px;
+  background-color: #00d1ff;
+  color: #111;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.cta-section .btn:hover {
+  background-color: #00b8e5;
+}
